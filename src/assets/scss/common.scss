@@ -1,0 +1,341 @@
+/*Vue隐藏*/
+[v-cloak] {
+  display: none;
+}
+
+/*清除样式*/
+
+body,
+ol,
+ul,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  position: relative;
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 300px;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-size: 14px;
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background: #fff;
+  color: #282828;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color .2s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+ol,
+ul,
+dl,
+li,
+dt,
+dd {
+  list-style: none
+}
+
+img {
+  border: 0;
+  vertical-align: middle
+}
+
+.boxShadow {
+  box-shadow: 0 0 .18rem 0 rgba(0, 0, 0, 0.1);
+}
+
+a img {
+  border: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+input,
+textarea {
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  outline: none;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  outline: none;
+  padding: 0px;
+  margin: 0;
+}
+
+/*透明度渐变*/
+.opacity {
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*清除浮动*/
+.clearfloat {
+  zoom: 1
+}
+
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0
+}
+
+/*居中*/
+.center {
+  margin: 0 auto
+}
+
+// 内外间距
+@for $i from 1 through 500 {
+
+  // 内边距
+  .p-#{$i} {
+    padding: 1px * $i
+  }
+
+  .p-t-#{$i} {
+    padding-top: 1px * $i
+  }
+
+  .p-b-#{$i} {
+    padding-bottom: 1px * $i
+  }
+
+  .p-t-b-#{$i} {
+    padding-top: 1px * $i;
+    padding-bottom: 1px * $i;
+  }
+
+  .p-l-#{$i} {
+    padding-left: 1px * $i
+  }
+
+  .p-r-#{$i} {
+    padding-right: 1px * $i
+  }
+
+  .p-l-r-#{$i} {
+    padding-left: 1px * $i;
+    padding-right: 1px * $i;
+  }
+
+  // 外边距
+  .m-#{$i} {
+    margin: 1px * $i;
+  }
+
+  .m-l-#{$i} {
+    margin-left: 1px * $i;
+  }
+
+  .m-r-#{$i} {
+    margin-right: 1px * $i;
+  }
+
+  .m-l-r-#{$i} {
+    margin-left: 1px * $i;
+    margin-right: 1px * $i;
+  }
+
+  .m-t-#{$i} {
+    margin-top: 1px * $i;
+  }
+
+  .m-b-#{$i} {
+    margin-bottom: 1px * $i;
+  }
+
+  .m-t-b-#{$i} {
+    margin-top: 1px * $i;
+    margin-bottom: 1px * $i;
+  }
+
+  // 定位
+
+  .top-#{$i} {
+    top: 1px * $i;
+  }
+
+  .bottom-#{$i} {
+    bottom: 1px * $i;
+  }
+
+  .right-#{$i} {
+    right: 1px * $i;
+  }
+
+  .left-#{$i} {
+    left: 1px * $i;
+  }
+}
+
+// position
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute
+}
+
+.fixed {
+  position: fixed
+}
+
+// 字体
+@for $i from 4 through 100 {
+  .fontsize#{$i} {
+    font-size: 1px * $i;
+  }
+}
+
+// 字体粗细
+.bold {
+  font-weight: bold
+}
+
+// 字体位置
+.v-left {
+  text-align: left
+}
+
+.v-right {
+  text-align: right
+}
+
+.v-center {
+  text-align: center
+}
+
+.auto {
+  margin: 0 auto;
+}
+
+.no-border {
+  border: none
+}
+
+.middle {
+  vertical-align: middle
+}
+
+.sub {
+  vertical-align: sub
+}
+
+// 宽 高 行高 最小高
+@for $i from 1 through 1000 {
+  .height#{$i} {
+    height: 1px * $i;
+  }
+
+  .minheight#{$i} {
+    min-height: 1px * $i;
+  }
+
+  .lineheight#{$i} {
+    line-height: 1px * $i;
+  }
+
+  .width#{$i} {
+    width: 1px * $i;
+  }
+
+}
